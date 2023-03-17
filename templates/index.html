@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BUS TICKET BOOKING WEBSITE</title>
+        <link rel="stylesheet" href="static/fro.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+	
+        <section class="header">
+            <nav>
+                <a href="index"><img src="static/images/bus.png" > </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                       <li><a href="index">HOME</a></li>
+                        <li><a href="about">ABOUT</a></li> 
+                        <li><a href="bookticket">BOOK TICKET</a></li>
+                        <li><a href="contact">CONTACT</a></li>
+                        <li><a href="comment">COMMENT</a></li>
+                    </ul>
+                </div>
+			
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>AirBus Booking Website</h1>
+                <p>“The journey of a thousand miles begins with a single step.”<br>
+                    So book your tickets here and enjoy your journey.
+                </p>
+                <a href="about" class="hero-btn">Visit Us To Know More</a>
+            </div>
+
+        </section>
+		
+		
+
+
+<section class="Buses">
+    <h1>Buses Available</h1>
+    <p>Here are some of the buses available for your exciting journey.</p>
+
+<div class="row">
+    <div class="Buses-col">
+        <h3>The Royal wheel</h3>
+        <p>One of the fastest bus available with the great speed ,without any interruption and the reach your destination as if you are sliding on the butter.</p>
+    </div>
+    <div class="Buses-col">
+        <h3>Green Warriors</h3>
+        <p>One of the fastest bus available with the great speed ,without any interruption and the reach your destination as if you are sliding on the butter.</p>
+     </div> 
+     <div class="Buses-col">
+        <h3>Red Hot Bus</h3>
+        <p>One of the fastest bus available with the great speed ,without any interruption and the reach your destination as if you are sliding on the butter.</p>
+  </div>
+</div>
+</section>
+
+ <section class="Destinations">
+                <h1>Our Services</h1>
+                <p>Our Services are available for all the International Airports in India.</p>
+
+                <div class="row">
+                    <div class="Destinations-col">
+                        <img src="static/images/airport1.jpeg">
+                        <div class="layer">
+                            <h3>Bangalore</h3>
+                        </div>
+                    </div>
+                    <div class="Destinations-col">
+                        <img src="static/images/airport2.jpeg">
+                        <div class="layer">
+                            <h3>Mumbai</h3>
+                        </div>
+                    </div>
+                    <div class="Destinations-col">
+                        <img src="static/images/airport3.jpeg">
+                        <div class="layer">
+                            <h3>Kolkata</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <div class="row" >
+    <div class="facilities-col">
+        <img src="static/images/money.jpeg">
+        <h3>Budget Friendly</h3>
+        <p>Budget friendly tickets</p>
+        </div>
+        <div class="facilities-col">
+            <img src="static/images/user.jpeg">
+            <h3>User Friendly </h3>
+            <p>User friendly website</p>
+
+            </div>
+      <div class="facilities-col">
+                <img src="static/images/flash.jpeg">
+                <h3>Fast As Flash</h3>
+                <p>Fast as Flash can reach the destination on time</p>
+                </div>
+    </div>
+</section>
+
+
+<section class="testimonials">
+    <h1>What Our Users Says</h1>
+    <p>costumer reviews are as follows</p>
+    <div class="row">
+        <div class="testimonial-col">
+        <img src="static/images/r1.jpg">
+        <div>
+            <p>We would recommend Travel online and will be using them again in the future.
+                Raju and his team gave us excellent service
+                And have an amazing time.
+            </p>
+            <h3>- Akshay Kumar</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+    </div>
+    <div class="testimonial-col">
+        <img src="static/images/r2.jpg">
+        <div>
+            <p>We would recommend Travel online and will be using them again in the future.
+                Raju and his team gave us excellent service
+                And have an amazing time.
+            </p>
+            <h3>- Karthik H</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-O"></i>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<section class="cta">
+    <h1>Book The Bus Tickets Anywhere From The World</h1>
+    <a href="contact" class="hero-btn">CONTACT US</a>
+</section>
+
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Every business has a story to tell. Even if you're running a start-up, you might not have a long history of changes and growth (yet), but it's a nice touch to talk about <br>how you got to where you are on the About page. So, isolate the milestones before your company's founding, and use them to give readers some backstory on your current venture.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+    </div>
+    <p>made with<i class="fa fa-heart-o"></i>booking pro</p>
+</section>
+
+
+
+
+
+       
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

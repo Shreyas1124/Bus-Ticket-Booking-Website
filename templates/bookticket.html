@@ -1,0 +1,235 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BUS TICKET BOOKING WEBSITE</title>
+        <link rel="stylesheet" href="static/fro.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index"><img src="static/images/bus.png" > </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index">HOME</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                        <li><a href="bookticket">BOOK TICKET</a></li>
+                        <li><a href="contact">CONTACT</a></li>
+                        <li><a href="comment">COMMENT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Ticket Booking</h1>
+
+        </section>
+<head>
+    <title> AirBus Ticketing System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="airbus.css" type="text/css" href="static/fro.css" />
+    
+</head>
+<style>
+    h1{color: solid;
+                font-size: 30px;
+                font-family: Times New Roman;}
+            </style>
+
+<body>
+    
+    </div>
+        <fieldset class="row1">
+            <legend>Travel Information</legend>
+            <p>
+            </select>
+                <label>Bus-name 
+                </label>
+                <select name="type">
+                    <option value="AirBus">The Royal wheel
+                    </option>
+                    <option value="AirBus">Green Warriors
+                    </option>
+                    <option value="AirBus">Red Hot Bus
+                    </option>
+                </select>
+                <label for="date">Date *</label>
+        <input type="date"> <br><br>
+                <label>Bus-type *
+                </label>
+                <select name="type">
+                    <option value="Sleeper">Sleeper
+                    </option>
+                    <option value="Semi Sleeper">Semi Sleeper
+                    </option>
+                </select>
+
+            </p>
+            <p>
+                <label>From*
+                </label>
+                <input type="text" class="name" required="required"/>
+			</p>
+            <p>			
+                <label>To *
+                </label>
+                <input type="text" class="name" required="required"/>
+			</p>
+
+            <p>
+                <label>Mobile *
+                </label>
+                <input type="text" id="phone" required="required"/>
+            </p>
+            <p>
+                <label>E-Mail *
+                </label>
+                <input id="email" required="required" type="text"/>
+            </p>
+            <div class="clear"></div>
+        </fieldset>
+		<style>
+		fieldset{
+		background-color:aquamarine;
+		}
+		</style>
+        <fieldset class="row2">
+            <legend>Personal Details</legend>
+            
+            
+                            <td>
+                                <label>Name</label>
+                                <input type="text" required="required" id="named">
+                            </td>
+                            <td>
+                                <label for="BX_age">Age</label>
+                                <input type="text" required="required"  id="age">
+                            </td>
+                            <td>
+                                <label for="BX_gender">Gender</label>
+                                <select id="gender" type="text" required="required">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="BX_birth">Berth Pre</label>
+                                <select id="BX_birth" name="BX_birth[]" required="required">
+                                    <option>Window</option>
+                                    <option>No Choice</option>
+                                </select>
+                            </td>
+                        </p>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                            <label>Aadhaar Number *
+                </label>
+                <input id="adhaarnumber" required="required" type="text"/>
+                
+            </p>
+            <div class="clear"></div>
+        </fieldset>
+        <fieldset class="row4">
+            <legend>Terms and Conditions</legend>
+            <p class="agreement">
+                <input type="button" value="confirm"/>
+ 
+                <label>* I accept the <a href="#">Terms and Conditions</a></label>
+            </p>
+
+            <div class="clear"></div>
+        </fieldset>
+        <div class="row">
+            <input type="button"  onclick="validate()" id="button"  value="Confirm/Pay &raquo;" >
+        </div>
+        <div class="clear"></div>
+    </form>
+    <div class="image">
+        <img class="imagec" src="static/images/bus.png"height="100px"width="250px" alt="parked bus">
+    </div>
+    <div class="footer">
+        <p>The identification details are required during journey. One of the passenger booked on the ticket should
+            have any of the identity cards ( Passport / PAN Card / Driving License / Photo ID card issued by Central
+            / State Govt / Student Identity Card with photograph) during the journey in original </p>
+        <p>© 2022 Passenger RASS, all rights reserved</p>
+    </div>
+</body>
+ <script>
+ function validate()
+    {
+	debugger;
+     var phone=document.getElementById('phone').value;
+	 var email=document.getElementById('email').value;
+	 var named=document.getElementById('named').value;
+	 var age=document.getElementById('age').value;
+	 var gender=document.getElementById('gender').value;
+     var adhaarnumber=document.getElementById('adhaarnumber').value;
+     
+	 	
+     var phonepattern=/^(6|7|8|9){1}[0-9]{9}$/;
+                if(!phonepattern.test(phone))
+                {
+                alert('Invalid phone number');
+                return false;
+                }
+	 var emailpattern=/^[a-z0-9]+[@]+[a-z]+[.]+[a-z]{2,3}$/;
+                if (!emailpattern.test(email))
+                {
+                alert("enter a valid email");
+                return false;
+                }			
+	 var nmpattern=/^[a-zA-Z ]{3,30}$/;
+                if(!nmpattern.test(named))
+                {
+                alert('Invalid name');
+                return false;
+                }
+	 var agepattern=/^[0-9]{2}$/;
+	            if(!agepattern.test(age))
+				{
+				alert('Invalid age');
+				return false;
+				}
+     
+     var adhaarnumberpattern=/^[0-9]{12}$/;
+                if(!adhaarnumberpattern.test(adhaarnumber))
+                {
+                alert('Invalid Aadhaar number');
+                return false;
+                }
+
+
+				$.ajax({
+				type:'GET',
+				url:'/regdata',
+				contentType:'application/jsonUTF-8',
+				data:
+				{
+				'apinamed':named,
+				'apiphone':phone,
+				'apiemail':email,
+				'apiadhaar':adhaar
+				},
+				datatype:'json',
+				success:function(data)
+                {	
+                   alert('your data is stored succesfully');
+                },
+                error:function(data)
+                {    
+                  alert('your data is not stored');
+				}
+				
+				});
+			  }
+			  </script>
+     
+    }
+
+ </script>        
+</html>
